@@ -1,0 +1,110 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Pacifico&family=Sedgwick+Ave&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+  --boos-color: red;
+  }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a,
+a:visited {
+  color: red;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+/* Menu */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  flex-grow: 2;
+  
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none; 
+  }
+header nav ul li a {
+    color: red;
+}
+
+
+.logo {
+  flex-grow:1;
+}
+.logo :first-child {
+    color: var(--boos-color);
+  font-family: "Courier New", Courier, monospace, cursive;
+  font-weight: 900;
+  font-size: 40px; 
+}
+
+.logo :last-child {
+  font-size: 1.5em; 
+  font-family: "Pacifico", cursive;
+}
+
+.main-container {
+    width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+.main-container article {
+    height: 75vh;
+  }
+  .main-intro {
+    width: 50vw;
+    padding-top: 20vh;
+    color: black;
+    line-height: 5.5vh;
+    font-size: 1.5rem;
+  }
+  .main-intro h2 {
+    color: var(--boos-color);
+  }
+  .main-intro a {
+    color: var(--boos-color);
+    text-decoration: none;
+  }
+  .products,
+  .story {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+  }
+  .products div {
+    width: 40%;
+    border-radius: 2px;
+    background-color: lightgray; 
+}
+.story {
+  flex-direction: column;
+}
+.story div {
+  width: 15rem;
+}
+
+
+
+.image-container img {
+    z-index: 1;
+    width: 11rem;
+  }
+ 
+  .item-name {
+    font-weight: 900;
+  }
+  
+  
